@@ -3,13 +3,13 @@ Iznimke
 
 HvatanjeIznimke
 ---------------
-Ilustracija odvajanja glavne logike od dijela koji hvata i obrağuje iznimku
+Ilustracija odvajanja glavne logike od dijela koji hvata i obraÄ‘uje iznimku
 te oporavlja program.
 
 
 TijekIzvodjenja
 ---------------
-Ispis tijeka izvoğenja try-catch-finally blokova
+Ispis tijeka izvoÄ‘enja try-catch-finally blokova
 
 
 FltarIznimki
@@ -19,31 +19,31 @@ Primjer filtra iznimki.
 
 BacanjeIznimkeUPozvanojMetodi
 -----------------------------
-Primjer izvoğenja try-catch-finally kada je iznimka baèena unutar pozvane metode.
+Primjer izvoÄ‘enja try-catch-finally kada je iznimka baÄena unutar pozvane metode.
 
 
 RukovateljNeobradjenihIznimki
 ----------------------------
-Primjer definiranja obrade UnhandledException dogağaja
-Ovo omoguæava da zapišemo sve neuhvaæene iznimke (npr. u log datoteku), 
-no program æe još uvijek imati unhandled exception!
+Primjer definiranja obrade UnhandledException dogaÄ‘aja
+Ovo omoguÄ‡ava da zapiÅ¡emo sve neuhvaÄ‡ene iznimke (npr. u log datoteku), 
+no program Ä‡e joÅ¡ uvijek imati unhandled exception!
 
 
 IznimkeWinForms
 ---------------
-Primjer ponašanja WinForms aplikacije kod neobrağene iznimke.
+Primjer ponaÅ¡anja WinForms aplikacije kod neobraÄ‘ene iznimke.
 
 
 IznimkePerfMon
 --------------
-Program generira iznimke u odreğenim vremenskim intervalima da bismo
+Program generira iznimke u odreÄ‘enim vremenskim intervalima da bismo
 ih mogli pratiti u PERFMON aplikaciji
 TODO: 
 1. Izgraditi program IznimkePerfmon
 2. Pokrenut program iz Windows (ne iz Visual Studija)
-3. U Windowsima potraiti program PerfMon (Performance Monitor) te ga pokrenuti
-4. U PerfMon-u kliknuti na crveni + i u popisu brojaèa potraiti .NET CLR Exceptions
-5. Proširiti stavku .NET CLR Exceptions i u njoj odabrati "# of Exceps Thrown"" 
-6. U popisu objekata potraiti i selektirati "IznimkePerfMon" te pritisnuti tipku Add
+3. U Windowsima potraÅ¾iti program PerfMon (Performance Monitor) te ga pokrenuti
+4. U PerfMon-u kliknuti na crveni + i u popisu brojaÄa potraÅ¾iti .NET CLR Exceptions
+5. ProÅ¡iriti stavku .NET CLR Exceptions i u njoj odabrati "# of Exceps Thrown"" 
+6. U popisu objekata potraÅ¾iti i selektirati "IznimkePerfMon" te pritisnuti tipku Add
 7. U programu IznimkePerfmon pritisnuti tipku za bacanje iznimki te pratiti prikaz u PerfMonu
 
