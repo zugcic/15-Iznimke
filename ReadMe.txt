@@ -6,6 +6,11 @@ BacanjeIznimke
 Primjer bacanja iznimke.
 
 
+ApstrakcijaIznimke
+------------------
+Kako od korisnika sakriti implementacijske detalje promjenom tipa iznimke.
+
+
 OdvajanjeGlavneLogike
 ---------------------
 Ilustracija odvajanja glavne logike od dijela koji hvata i obrađuje iznimku

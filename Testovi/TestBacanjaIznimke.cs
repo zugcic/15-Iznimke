@@ -9,16 +9,16 @@ namespace Vsite.CSharp.Testovi
         [TestMethod]
         public void BacanjeIznimke_FaktorijelVraćaPravuVrijednostZaPozitivneArgumente()
         {
-            Assert.AreEqual(1, BacanjeIznimke.Faktorjel(1));
-            Assert.AreEqual(2, BacanjeIznimke.Faktorjel(2));
-            Assert.AreEqual(6, BacanjeIznimke.Faktorjel(3));
-            Assert.AreEqual(24, BacanjeIznimke.Faktorjel(4));
+            Assert.AreEqual(1, Math.Faktorjel(1));
+            Assert.AreEqual(2, Math.Faktorjel(2));
+            Assert.AreEqual(6, Math.Faktorjel(3));
+            Assert.AreEqual(24, Math.Faktorjel(4));
         }
 
         [TestMethod]
         public void BacanjeIznimke_FaktorijelVraća1ZaArgument0()
         {
-            Assert.AreEqual(1, BacanjeIznimke.Faktorjel(0));
+            Assert.AreEqual(1, Math.Faktorjel(0));
         }
 
         [TestMethod]
@@ -26,7 +26,7 @@ namespace Vsite.CSharp.Testovi
         {
             try
             {
-                BacanjeIznimke.Faktorjel(-1);
+                Math.Faktorjel(-1);
                 Assert.Fail();
             }
             catch (Exception e)

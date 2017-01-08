@@ -1,12 +1,9 @@
-using System;
+﻿using System;
 
 namespace Vsite.CSharp
 {
-    // Jednostavni primjer kako iznimke omogućavaju odvajanje
-    // glavne logike od hvatanja i oporavka 
-    public class BacanjeIznimke
+    public static class Math
     {
-
         public static int Faktorjel(int broj)
         {
             // TODO: Dodati u metodu provjeru je li argument manji od 0 i u tom slučaju baciti iznimku tipa ArgumentOutOfRangeException s odogovarajućom porukom
@@ -17,21 +14,27 @@ namespace Vsite.CSharp
             return rezultat;
         }
 
+        public static int Povrh(int n, int k)
+        {
+            return Faktorjel(n) / (Faktorjel(k) * Faktorjel(n - k));
+        }
+    }
+
+    public class BacanjeIznimke
+    {
         static void Main(string[] args)
         {
-            // TODO: Provjeriti koju iznimku će baciti metoda faktorjel u donjoj petlji te na osnovu toga...
-            // TODO: Donje petlje obuhvatiti try-catch blokom koji će prekinuti daljnje računanje kada bude bačena iznimka
+            // TODO: Provjeriti vraćaju li donji pozivi metode očekivane rezultate
 
-            {
-                for (int n = 1; n < 20; ++n)
-                {
-                    for (int k = 1; k <= n; ++k)
-                    {
-                        int povrh = Faktorjel(n) / (Faktorjel(k) * Faktorjel(n - k));
-                        Console.WriteLine("{0} povrh  {1} = {2}", n, k, povrh);
-                    }
-                }
-            }
+            int n = 0;
+            Console.WriteLine("{0}! = {1}", n, Math.Faktorjel(n)); // trebalo bi biti 0! = 1
+            n = 3;
+            Console.WriteLine("{0}! = {1}", n, Math.Faktorjel(n)); // trebalo bi biti 3! = 6
+            n = 5;
+            Console.WriteLine("{0}! = {1}", n, Math.Faktorjel(n)); // trebalo bi biti 5! = 120
+
+            n = -1;
+            Console.WriteLine("{0}! = {1}", n, Math.Faktorjel(n)); // trebalo bi baciti iznimku!
 
 
             Console.WriteLine("GOTOVO!!!");
