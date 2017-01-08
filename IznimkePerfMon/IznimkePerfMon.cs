@@ -1,15 +1,15 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Vsite.CSharp
 {
-    // Program generira iznimke u odreğenim vremenskim intervalima da bismo
+    // Program generira iznimke u odreÄ‘enim vremenskim intervalima da bismo
     // ih mogli pratiti u PERFMON aplikaciji
-    // Nakon što ovaj program pokrenemo (moramo iskljuèiti hvatanje 
+    // Nakon Å¡to ovaj program pokrenemo (moramo iskljuÄiti hvatanje 
     // DivideByZeroException u Visual Studiju!), treba pokrenuti 
-    // PerfMon.exe i ukljuèiti praæene .NET CLR Exceptions. Nakon toga kliknemo
-    // na tipku da naša aplikacija poène bacati iznimke.
+    // PerfMon.exe i ukljuÄiti praÄ‡ene .NET CLR Exceptions. Nakon toga kliknemo
+    // na tipku da naÅ¡a aplikacija poÄne bacati iznimke.
     static class Program
     {
         /// <summary>

@@ -24,7 +24,12 @@ Ispis tijeka izvođenja try-catch-finally blokova
 
 FltarIznimki
 ------------
-Primjer filtra iznimki.
+Primjer filtra iznimki prema tipu bačene iznimke.
+
+
+FiltriranjeIznimkiPredikatom
+----------------------------
+Kako se mogu filtrirati iznimke istog tipa, prema dodatnom kriteriju.
 
 
 BacanjeIznimkeUPozvanojMetodi

@@ -1,18 +1,18 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Vsite.CSharp
 {
-    // Primjer definiranja obrade UnhandledException dogaðaja
-    // Ovo omoguæava da zapišemo sve neuhvaæene iznimke (npr. 
-    // u log datoteku), no program æe još uvijek imati
+    // Primjer definiranja obrade UnhandledException dogaÄ‘aja
+    // Ovo omoguÄ‡ava da zapiÅ¡emo sve neuhvaÄ‡ene iznimke (npr. 
+    // u log datoteku), no program Ä‡e joÅ¡ uvijek imati
     // unhandled exception!
     class Program
     {
         static void Main(string[] args)
         {
-            // TODO: Odkomentirati donju naredbu te dogaðaju UnhandledException prdružiti rukovatelja koji æe ispisati podatke o neuhvaæenoj iznimci te pozvati Console.ReadKey() da privremeno zaustavi izvoðenje. Pokrenuti program i provjeriti ponašanje.
+            // TODO: Odkomentirati donju naredbu te dogaÄ‘aju UnhandledException prdruÅ¾iti rukovatelja koji Ä‡e ispisati podatke o neuhvaÄ‡enoj iznimci te pozvati Console.ReadKey() da privremeno zaustavi izvoÄ‘enje. Pokrenuti program i provjeriti ponaÅ¡anje.
             //AppDomain.CurrentDomain.UnhandledException;
 
             try
@@ -21,7 +21,7 @@ namespace Vsite.CSharp
             }
             catch (Exception e)
             {
-                Console.WriteLine("Uhvaæena iznimka: " + e.Message);
+                Console.WriteLine("UhvaÄ‡ena iznimka: " + e.Message);
             }
             throw new Exception("2");
         }

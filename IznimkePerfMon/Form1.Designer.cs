@@ -1,4 +1,4 @@
-namespace Vsite.CSharp
+﻿namespace Vsite.CSharp
 {
     partial class Form1
     {
@@ -44,7 +44,7 @@ namespace Vsite.CSharp
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Po�ni bacati";
+            this.button1.Text = "Počni bacati";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

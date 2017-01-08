@@ -1,30 +1,40 @@
-using System;
+Ôªøusing System;
 using System.IO;
 
 namespace Vsite.CSharp
 {
-    // Primjer filtera iznimki
-    class Program
+    public class FiltarIznimki
     {
+        public const string FormatFiltraException = "Filtar Exception: {0}";
+        public const string FormatFiltraArgumentException = "Filtar ArgumentException: {0}";
+        public const string FormatFiltraArgumentOutOfRangeException = "Filtar ArgumentOutOfRangeException: {0}";
+
+        public static void FiltriranjeIznimkePremaTipu(Exception iznimka)
+        {
+            try
+            {
+                throw iznimka;
+            }
+            // TODO: Slo≈æiti filtere iznimki tipa Exception, ArgumentOutOfRangeException i ArgumentException, dodati ispise koristeƒái gornje formate te provjeriti koja ƒáe iznimka biti uhvaƒáena u kojem bloku.
+            catch (Exception e)
+            {
+                Console.WriteLine(FormatFiltraException, e.GetType().Name);
+            }
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
-            // u petlji bacamo razliËite tipove iznimki i pratimo tko Êe ih uhvatiti
-            Exception[] iznimke = new Exception[] { new FileNotFoundException(), 
-                new ArgumentOutOfRangeException(), new ArgumentException() };
+            // u petlji bacamo razliƒçite tipove iznimki i pratimo tko ƒáe ih uhvatiti
+            Exception[] iznimke = new Exception[]
+            {
+                new FileNotFoundException(), new ArgumentOutOfRangeException(),
+                new ArgumentException(), new ArgumentNullException()
+            };
 
             for (int i = 0; i < iznimke.Length; ++i)
             {
-                try
-                {
-                    throw iznimke[i];
-                }
-                // TODO: Sloûiti filtere iznimki tipa Exception, ArgumentOutOfRangeException i ArgumentException te provjeriti koja Êe iznimka biti uhvaÊena u kojem bloku.
-                catch (Exception e)
-                {
-                    Console.WriteLine("Exception");
-                    Console.WriteLine(e);
-                    Console.WriteLine();
-                }
+                FiltriranjeIznimkePremaTipu(iznimke[i]);
             }
 
             Console.WriteLine("GOTOVO!!!");

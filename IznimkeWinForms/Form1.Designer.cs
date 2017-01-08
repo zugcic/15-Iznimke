@@ -1,4 +1,4 @@
-namespace Vsite.CSharp
+﻿namespace Vsite.CSharp
 {
     partial class Form1
     {

@@ -1,23 +1,23 @@
-using System;
+Ôªøusing System;
 
 namespace Vsite.CSharp
 {
-    // Primjer izvoenja try-catch-finally kada je iznimka
-    // baËena unutar pozvane metode
+    // Primjer izvoƒëenja try-catch-finally kada je iznimka
+    // baƒçena unutar pozvane metode
     class Program
     {
         static void Main(string[] args)
         {
-            // TODO: Prije izvoenja programa pokuöati predvidjeti tok programa. Pokrenut program i provjeriti ispravnost pretpostavke
+            // TODO: Prije izvoƒëenja programa poku≈°ati predvidjeti tok programa. Pokrenuti program i provjeriti ispravnost pretpostavke.
             try
             {
                 Metoda1();
             }
-            //// ako bismo ovo zakomentirali, unhandled exception!!!
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine("catch(Exception) u Main");
-            //}
+            // TODO: Zakomentirati donji blok catch i provjeriti ≈°to ƒáe se dogoditi ponovnim pokretanjem programa.
+            catch (Exception e)
+            {
+                Console.WriteLine("catch(Exception) u Main");
+            }
             finally
             {
                 Console.WriteLine("finally u Main");
@@ -36,7 +36,7 @@ namespace Vsite.CSharp
             {
                 Console.WriteLine("catch(ArgumentException) u Metoda1");
             }
-            // TODO: Kako bi izgledalo izvoenje programa kada bi se izostavio donji blok hvatanja? Zakomenirajte ga i pokrenite program. 
+            // TODO: Kako bi izgledalo izvoƒëenje programa kada bi se izostavio donji blok hvatanja? Zakomenirajte ga i pokrenite program. 
             catch (DivideByZeroException)
             {
                 Console.WriteLine("catch(DivideByZeroException) u Metoda1");
@@ -53,7 +53,7 @@ namespace Vsite.CSharp
             int b = 0;
             try
             {
-                // ovdje Êe biti baËen DivideByZeroException!!!
+                // ovdje ƒáe biti baƒçen DivideByZeroException!!!
                 Console.WriteLine("Bacam Exception");
                 Console.WriteLine(a / b);
             }
