@@ -63,6 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestApstrakcijeIznimke.cs" />
     <Compile Include="TestOdvajanjaGlavneLogike.cs" />
+    <Compile Include="TestTijekaIzvodjenja.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ApstrakcijaIznimke\ApstrakcijaIznimke.csproj">
