@@ -1,8 +1,13 @@
 Iznimke
 =======
 
-HvatanjeIznimke
----------------
+BacanjeIznimke
+--------------
+Primjer bacanja iznimke.
+
+
+OdvajanjeGlavneLogike
+---------------------
 Ilustracija odvajanja glavne logike od dijela koji hvata i obrađuje iznimku
 te oporavlja program.
 
