@@ -9,10 +9,14 @@ namespace Vsite.CSharp
 			//Dodati u metodu provjeru je li argument manji od 0 i u tom slučaju baciti iznimku tipa ArgumentOutOfRangeException s odogovarajućom porukom
 			if (broj < 0)
 				throw new ArgumentOutOfRangeException(nameof(broj), "Argument nesije biti manji od nule");
-            int rezultat = 1;
-            for (int i = 2; i <= broj; ++i)
-                rezultat *= i;
-            return rezultat;
+			try {
+				int rezultat = 1;
+				for (int i = 2;i <= broj;++i)
+					rezultat *= i;
+				return rezultat;
+			} catch (OverflowException e) {
+				throw new ArgumentOutOfRangeException(nameof(broj),broj,"Argument je prevelik");
+			}
         }
 
         public static int Povrh(int n, int k)
