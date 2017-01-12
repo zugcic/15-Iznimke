@@ -14,10 +14,10 @@ namespace Vsite.CSharp
                 Metoda1();
             }
             // TODO: Zakomentirati donji blok catch i provjeriti što će se dogoditi ponovnim pokretanjem programa.
-            catch (Exception e)
-            {
-                Console.WriteLine("catch(Exception) u Main");
-            }
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine("catch(Exception) u Main");
+            //}
             finally
             {
                 Console.WriteLine("finally u Main");
@@ -36,11 +36,11 @@ namespace Vsite.CSharp
             {
                 Console.WriteLine("catch(ArgumentException) u Metoda1");
             }
-            // TODO: Kako bi izgledalo izvođenje programa kada bi se izostavio donji blok hvatanja? Zakomenirajte ga i pokrenite program. 
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("catch(DivideByZeroException) u Metoda1");
-            }
+            // Kako bi izgledalo izvođenje programa kada bi se izostavio donji blok hvatanja? Zakomenirajte ga i pokrenite program. 
+            //catch (DivideByZeroException)
+            //{
+            //    Console.WriteLine("catch(DivideByZeroException) u Metoda1");
+            //}
             finally
             {
                 Console.WriteLine("finally u Metoda1");
