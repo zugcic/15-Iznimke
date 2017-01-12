@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace Vsite.CSharp
+namespace Vsite.CSharp	  //DZ
 {
     // Primjer obrade ThreadException u Windows.Forms aplikaciji
     static class Program

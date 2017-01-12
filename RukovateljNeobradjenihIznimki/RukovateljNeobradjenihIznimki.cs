@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Vsite.CSharp
+namespace Vsite.CSharp	  //DZ
 {
     // Primjer definiranja obrade UnhandledException događaja
     // Ovo omogućava da zapišemo sve neuhvaćene iznimke (npr. 
