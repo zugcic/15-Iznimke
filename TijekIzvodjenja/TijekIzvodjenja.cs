@@ -1,18 +1,18 @@
-using System;
+Ôªøusing System;
 
 namespace Vsite.CSharp
 {
-    // ispis tijeka izvoenja try-catch-finally bloka
+    // ispis tijeka izvoƒëenja try-catch-finally bloka
     public class TijekIzvodjenja
     {
-        public const string ZapoËinjeBlokTry = "Blok try - poËetak";
-        public const string ZavröavaBlokTry = "Blok try - kraj";
+        public const string ZapoƒçinjeBlokTry = "Blok try - poƒçetak";
+        public const string Zavr≈°avaBlokTry = "Blok try - kraj";
         public const string BlokCatch = "Blok catch";
         public const string BlokFinally = "Blok finally";
 
         public static void IspisTryCatchFinally(int djeljenjik, int djeljitelj)
         {
-            // TODO: Donje naredbu umetnuti u try-blok te dodati catch blok za hvatanje iznimke u sluËaju dijeljenja s 0 i finally blok. Dodati kontrolne ispise gornjih poruka u svaki od tih blokova te provjeriti öto Êe se ispisati.
+            // TODO: Donje naredbu umetnuti u try-blok te dodati catch blok za hvatanje iznimke u sluƒçaju dijeljenja s 0 i finally blok. Dodati kontrolne ispise gornjih poruka u svaki od tih blokova te provjeriti ≈°to ƒáe se ispisati.
 
             Console.WriteLine("Dijelim s {0}", djeljitelj);
             Console.WriteLine(djeljenjik / djeljitelj);

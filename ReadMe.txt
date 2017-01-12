@@ -49,6 +49,11 @@ IznimkeWinForms
 Primjer ponašanja WinForms aplikacije kod neobrađene iznimke.
 
 
+EfikasnostIznimke
+-----------------
+Primjer koji pokazuje koliko bacanje iznimke usporava izvođenje programa.
+
+
 IznimkePerfMon
 --------------
 Program generira iznimke u određenim vremenskim intervalima da bismo
