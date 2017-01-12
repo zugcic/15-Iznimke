@@ -27,14 +27,15 @@ namespace Vsite.CSharp
 
         public static void IspišiLogaritamBroja(double broj, double baza)
         {
-            // TODO: Proširiti blok hvatanja filterom koji će provjeravati koji je argument neispravan te ispisati jednu od gornje dvije poruke.
-            try
-            {
-                Console.WriteLine(FormatIspisa, broj, baza, Math.Logaritam(broj, baza));
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-            }
+			// Proširiti blok hvatanja filterom koji će provjeravati koji je argument neispravan te ispisati jednu od gornje dvije poruke.
+			try {
+				Console.WriteLine(FormatIspisa, broj, baza, Math.Logaritam(broj, baza));
+			} catch (ArgumentOutOfRangeException e) when (e.ParamName == "broj") {
+				Console.WriteLine(NedozvoljeniBroj);
+			} catch (ArgumentOutOfRangeException ) {
+
+				Console.WriteLine(NedozvoljenaBaza);
+			}
         }
 
         static void Main(string[] args)
